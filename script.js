@@ -1,10 +1,15 @@
 const waitTime = 5500; // 5.5 seconds in milliseconds
 circle = document.getElementById('circle');
+isStarted = false;
 
 function start() {
+    if (isStarted) {
+        return; // Prevent starting again if already started
+    }
     toggleCircle();
-    $('#text').text('Breathe in for 4 seconds');
+    $('#text').text('Breathe in for 5,5 seconds');
     setInterval(toggleCircle, waitTime); // Then every 5.5 seconds
+    isStarted = true;
 
 }
 
