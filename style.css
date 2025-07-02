@@ -1,6 +1,15 @@
 body {
-    padding: 20px;
     background-color: #e8b92d;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle {
