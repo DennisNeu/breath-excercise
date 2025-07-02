@@ -7,7 +7,6 @@ function start() {
         return; // Prevent starting again if already started
     }
     toggleCircle();
-    $('#text').text('Breathe in for 5,5 seconds');
     setInterval(toggleCircle, waitTime); // Then every 5.5 seconds
     isStarted = true;
 
@@ -15,5 +14,5 @@ function start() {
 
 function toggleCircle() {
     circle.classList.toggle('open');
-    circle.classList.contains('open') ? $('#text').text('Breathe in for 5,5 seconds') : $('#text').text('Breathe out for 5,5 seconds');
+    circle.classList.contains('open') ? circle.innerHTML = "in" : circle.innerHTML = "out";
 }

@@ -1,9 +1,10 @@
 body {
     padding: 20px;
+    background-color: #e8b92d;
 }
 
 .circle {
-    position: relative;
+  flex: 1 0 1;
     width: 0px;
     height: 0px;
     top: 50px;
@@ -15,13 +16,20 @@ body {
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
     text-align: center;
-    background: red;
+    background: #d1031a;
     color: white;
     border-radius: 100%;
-    padding: 20px;
+    padding: 30px;
+    margin: 100px;
     overflow: hidden;
     cursor: pointer;
-}
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+  }
 
 .open {
     top: 0px;
@@ -31,10 +39,6 @@ body {
 }
 
 .circle-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 16px;
     color: black;
 }
@@ -42,6 +46,9 @@ body {
 .circle-container {
     display: flex;
     width: 200px;
-    height: 50px;
+    height: 500px;
     margin: 0 auto; /* Center the circle container */
+    align-items: center; /* Center the circle vertically */
+    justify-content: center; /* Center the circle horizontally */
+    flex-direction: column; /* Stack the circle and text vertically */
 }
