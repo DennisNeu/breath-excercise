@@ -10,5 +10,5 @@ function start() {
 
 function toggleCircle() {
     circle.classList.toggle('open');
-    circle.classList.contains('open') ? $('#text').text('Breathe in for 4 seconds') : $('#text').text('Breathe out for 4 seconds');
+    circle.classList.contains('open') ? $('#text').text('Breathe in for 5,5 seconds') : $('#text').text('Breathe out for 5,5 seconds');
 }
