@@ -21,7 +21,9 @@ function toggleCircle() {
 
     if (circle.classList.contains('open')) {
         inhale.play();
+        circle.innerHTML = "in";
     } else {
         exhale.play();
+        circle.innerHTML = "out";
     }
 }
